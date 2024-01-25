@@ -1,17 +1,17 @@
-let calculator = document.getElementById("calculator");
+document.addEventListener("DOMContentLoaded", function() {
+    let calculator = document.getElementById("calculator");
+    calculator.addEventListener("submit", calculate);
+});
 
-function calculate() {
+function calculate(event) {
+    event.preventDefault();
     let equation = document.getElementById("inputEquation");
     let calcToComplete = equation.value;
     let completedCalc = eval(calcToComplete);
-    console.log(completedCalc);
+    let answer = document.getElementById("answer");
+    answer.value = completedCalc;
 }
 
-if (calculator)
-{
-    console.log('real');
-}
-else {
-    console.log("null");
-}
+
+
 
