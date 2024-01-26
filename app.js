@@ -170,6 +170,15 @@ function calculate(event) {
         alert("Please input a valid equation!");
     }
     equation.value = completedCalc;
+
+    //if numbers too large to fit
+    let calcString = String(completedCalc).split('');
+    if (calcString.length > 17)
+    {
+        calcString.splice(16, calcString.length-17);
+    }
+    equation.value = calcString.join('');
+
 }
 
 

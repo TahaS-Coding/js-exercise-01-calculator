@@ -8,7 +8,9 @@ h1{
     text-align: center;
 }
 .calculator-wrapper{
-    background-color: darkgrey;
+    background-image: url(taha.jpg);
+    background-size: cover;
+    background-position-y: center;
     height: 600px;
     width: 400px;
     display: flex;
@@ -21,6 +23,7 @@ h1{
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 30px 30px;
+    overflow: hidden;
 }
 output{
     display: flex;
