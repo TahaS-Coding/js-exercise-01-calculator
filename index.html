@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="app.js"></script>
+    <link rel='stylesheet' href='style.css'>
 </head>
+
 <body>
-    <form id="calculator">
-        <label for="inputEquation">Your Calculation</label>
-        <input type="text" id="inputEquation">
-        <button type="submit"></button>
-        <output id="answer" for="inputEquation" ></output>
-    </form>
+    <h1>Taha Shahid's Calculator</h1>
+    <div class="calculator-wrapper">
+        <form id="calculator">
+            <output id="inputEquation"></output>
+            <div>
+                <div><button id="clearButton" type="button">CLEAR</button></div>
+                <button id="sevenButton" type="button">7</button>
+                <button id="eightButton" type="button">8</button>
+                <button id="nineButton" type="button">9</button>
+                <button id="divideButton" type="button">÷</button>
+                <button id="fourButton" type="button">4</button>
+                <button id="fiveButton" type="button">5</button>
+                <button id="sixButton" type="button">6</button>
+                <button id="multiplyButton" type="button">x</button>
+                <button id="oneButton" type="button">1</button>
+                <button id="twoButton" type="button">2</button>
+                <button id="threeButton" type="button">3</button>
+                <button id="minusButton" type="button">-</button>
+                <button id="zeroButton" type="button">0</button>
+                <button id="decimalButton" type="button">.</button>
+                <button id="plusButton" type="button">+</button>
+                <button id="equalButton" type="submit">=</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
